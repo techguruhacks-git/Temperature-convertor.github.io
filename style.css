@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 32px;
+    font-family: cursive;
+    font-weight: 600;
+    color: aliceblue;
+    z-index: 1;
+    text-decoration: underline 2px #eb297d;
+}
+
+.content{
+    max-width: 400px;
+    width: 100%;
+background: rgba(255, 255, 255, 0.35);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.5px);
+-webkit-backdrop-filter: blur(9.5px);
+border: 1px solid rgba(255, 255, 255, 0.43);  
+  padding: 35px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.3s all ease;
+    margin-left: 80px;
+    z-index: -1;
+
+}
+
+.content:hover{
+    transform: translateY(-10px);
+    border-right: 2px solid rgb(239, 30, 100);
+    border-bottom: 2px solid rgb(239, 30, 100);
+}
+
+.content .input-box input{
+    display: inline;
+    width: 320px;
+    max-width: 500px;
+    height: 50px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    color: #737373;
+    margin-top: 20px;
+
+}
+
+.content .input-box input:focus{
+    border: 3px solid #eb297d;
+
+}
+
+.content .input-box h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content .fa-arrow-down {
+    position: relative;
+    font-size: 25px;
+    color: #000000;
+    top: 25px;
+    display: inline;
+    padding-left: 140px;
+}
+
+.content .fa-arrow-up{
+    position: relative;
+    font-size: 25px;
+    top: 25px;
+
+}
+
+.content .fa-temperature-low{
+    font-size: 25px;
+    color: #323131;
+    margin-bottom: 10px;
+    
+}
+
+.input-box input::-webkit-inner-spin-button,
+.input-box input::-webkit-outer-spin-button{
+    display: none;
+}
+
+.credit{
+
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.square li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgb(249, 32, 152);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+
+.square li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.square li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.square li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.square li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.square li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.square li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.square li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.square li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.square li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.square li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
