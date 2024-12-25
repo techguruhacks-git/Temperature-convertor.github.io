@@ -1,4 +1,7 @@
 # Temperature-convertor.github.io
+
+Disclaimer: This project is made by Tutorial and I add some features and change the user interface also take help of AI to solve some error only.
+
  
 The Project is a simple Temperature Converter built using HTML CSS and javascript, It allows users to convert between various temperature scales, including Celsius, fahrenheit, Kelvin and Rankine . 
 
